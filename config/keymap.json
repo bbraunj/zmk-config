@@ -6,14 +6,14 @@
     "base",
     "raise",
     "lower",
-    "HYPER"
+    "Test_CMD"
   ],
   "layers": [
     [
-         "&kp TAB",        "&kp Q",  "&kp W",  "&kp F",    "&kp P",  "&kp B",               "&kp J",     "&kp L",     "&kp U",   "&kp Y", "&kp SEMICOLON", "&kp BACKSPACE",
-       "&lt 3 ESC", "&mt LSHIFT A",  "&kp R",  "&kp S",    "&kp T",  "&kp G",               "&kp M",     "&kp N",     "&kp E",   "&kp I",  "&mt RSHIFT O",      "&kp APOS",
-       "&kp LSHFT",        "&kp Z",  "&kp X",  "&kp C",    "&kp D",  "&kp V",               "&kp K",     "&kp H", "&kp COMMA", "&kp DOT",      "&kp FSLH",    "&kp RSHIFT",
-                                               "&mo 1", "&kp LCMD",  "&mo 2",           "&kp RCTRL", "&kp SPACE", "&kp ENTER"
+         "&kp TAB",        "&kp Q",  "&kp W",  "&kp F",  "&kp P",  "&kp B",               "&kp J",     "&kp L",     "&kp U",   "&kp Y", "&kp SEMICOLON", "&kp BACKSPACE",
+       "&lt 3 ESC", "&mt LSHIFT A",  "&kp R",  "&kp S",  "&kp T",  "&kp G",               "&kp M",     "&kp N",     "&kp E",   "&kp I",  "&mt RSHIFT O",      "&kp APOS",
+       "&kp LSHFT",        "&kp Z",  "&kp X",  "&kp C",  "&kp D",  "&kp V",               "&kp K",     "&kp H", "&kp COMMA", "&kp DOT",      "&kp FSLH",    "&kp RSHIFT",
+                                               "&mo 1",  "&mo 3",  "&mo 2",           "&kp RCTRL", "&kp SPACE", "&kp ENTER"
     ], [
            "&trans", "&kp N1", "&kp N2", "&kp N3", "&kp N4", "&kp N5",           "&kp N6", "&kp N7", "&kp N8", "&kp N9", "&kp N0", "&trans",
        "&bt BT_CLR", "&kp N1", "&kp N2", "&kp N3", "&kp N4", "&kp N5",           "&kp N6", "&kp N7", "&kp N8", "&kp N9", "&kp N0", "&trans",
@@ -25,10 +25,10 @@
        "&trans",   "&trans", "&trans",   "&trans",   "&trans",    "&trans",           "&kp UNDER",  "&kp PLUS",        "&kp LBRC", "&kp RBRC", "&kp PIPE", "&kp TILDE",
                                          "&trans",   "&trans",    "&trans",              "&trans",    "&trans",          "&trans"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-                                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans"
+       "&trans", "&trans", "&trans", "&trans",   "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans",   "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans",   "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+                                     "&trans", "&kp LCMD", "&trans",           "&trans", "&trans", "&trans"
     ]
   ]
 }
