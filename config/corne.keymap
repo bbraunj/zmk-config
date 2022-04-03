@@ -22,10 +22,10 @@
 
         default_layer {
             bindings = <
-   &kp TAB         &kp Q   &kp W   &kp F     &kp P        &kp B                &kp J           &kp L          &kp U    &kp Y  &kp SEMICOLON  &kp BACKSPACE
-   &kp ESC  &mt LSHIFT A   &kp R   &kp S     &kp T        &kp G                &kp M           &kp N          &kp E    &kp I   &mt RSHIFT O       &kp APOS
- &kp LSHFT         &kp Z   &kp X   &kp C     &kp D        &kp V                &kp K           &kp H      &kp COMMA  &kp DOT       &kp FSLH     &kp RSHIFT
-                                   &mo 4  &kp LCMD  &lt 2 ENTER            &lt 1 TAB  &mt RCMD SPACE  &kp BACKSPACE
+   &kp TAB         &kp Q   &kp W   &kp F     &kp P        &kp B                &kp J           &kp L           &kp U    &kp Y  &kp SEMICOLON  &kp BACKSPACE
+   &kp ESC  &mt LSHIFT A   &kp R   &kp S     &kp T        &kp G                &kp M           &kp N           &kp E    &kp I   &mt RSHIFT O       &kp APOS
+ &kp LSHFT         &kp Z   &kp X   &kp C     &kp D        &kp V                &kp K           &kp H           &kp COMMA  &kp DOT       &kp FSLH     &kp RSHIFT
+                                   &mo 4  &kp LCMD  &lt 2 ENTER                &kp BACKSPACE   &mt RCMD SPACE  &lt 1 TAB
             >;
         };
 
@@ -43,7 +43,7 @@
  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
  &trans    &trans  &trans    &trans    &trans     &trans            &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
  &trans    &trans  &trans    &trans    &trans     &trans            &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans     &trans               &trans     &trans         &kp SLCK
+                             &trans    &trans     &trans               &trans     &trans         &kp LC(B)
             >;
         };
 
