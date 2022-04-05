@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <400>;
 };
 
 / {
@@ -26,14 +26,14 @@
 
         default_layer {
             bindings = <
- &kp TAB   &kp Q        &kp W        &kp F	    &kp P       &kp B              &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp BACKSPACE
- &lt 5 ESC &mt LSHIFT A &mt LCTRL R  &mt LALT S &mt LCMD T  &kp G              &kp M         &mt LCMD N  &mt RALT E   &mt RCTRL I &mt RSHIFT O  &kp APOS
- &kp LALT  &kp Z        &kp X        &kp C      &kp D       &kp V              &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp LALT
-                                     &mo 2      &mo 4       &kp ENTER          &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
+ &kp TAB         &kp Q        &kp W   &kp F	     &kp P     &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp BACKSPACE
+ &kp ESC  &mt LSHIFT A  &mt LCTRL R   &mt LALT S &LCMD T   &kp G                &kp M         &mt RCMD N  &mt RALT E   &mt RCTRL I &mt RSHIFT O  &kp APOS
+ &kp LALT        &kp Z        &kp X   &kp C      &kp D     &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp LALT
+                                       &mo 2     &kp LCMD  &kp BACKSPACE        &lt 4 ENTER   &lt 1 SPACE &mt RCMD TAB
             >;
         };
 
-        layer_raise {
+        layer_layer_raise {
             bindings = <
  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5              &kp N6    &kp N7    &kp N8   &kp N9 &kp N0    &trans
  &trans  &trans  &trans  &trans  &trans  &trans              &kp LEFT  &kp LEFT  &kp DOWN &kp UP &kp RIGHT &trans
@@ -42,7 +42,7 @@
             >;
         };
 
-        layer_lower {
+        layer_layer_lower {
             bindings = <
  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans
  &trans    &trans  &trans    &trans    &trans     &trans            &kp MINUS  &kp EQUAL &kp LBKT        &kp RBKT  &kp BSLH  &kp GRAVE
@@ -51,7 +51,7 @@
             >;
         };
 
-        layer_numpad {
+        layer_layer_numpad {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
@@ -60,21 +60,12 @@
             >;
         };
 
-        layer_navigation {
+        layer_layer_navigation {
             bindings = <
  &trans  &trans  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans            &kp LEFT        &kp DOWN         &kp UP     &kp RIGHT   &trans        &trans
  &trans  &trans  &trans  &trans         &trans       &trans            &kp H           &kp J            &kp K      &kp L       &trans        &trans
  &trans  &trans  &trans  &trans         &trans       &trans            &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
-                         &trans         &trans       &trans			       &trans          &trans           &trans
-            >;
-        };
-
-        layer_navigation_2 {
-            bindings = <
- &trans  &trans  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans            &kp LEFT        &kp DOWN         &kp UP     &kp RIGHT   &trans        &trans
- &trans  &trans  &trans  &trans         &trans       &trans            &kp LEFT        &kp DOWN         &kp UP     &kp RIGHT   &trans        &trans
- &trans  &trans  &trans  &trans         &mo 5        &trans            &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
-                         &trans         &trans       &trans			       &trans          &trans           &trans
+                         &trans         &trans       &trans			   &trans          &trans           &trans
             >;
         };
 
