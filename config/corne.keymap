@@ -25,7 +25,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <400>;
+        tapping-term-ms = <150>;
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -38,10 +38,10 @@
 
         default_layer {
             bindings = <
- &kp TAB         &kp Q        &kp W   &kp F	     &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp BACKSPACE
- &kp ESC  &hm LSHIFT A  &hm LCTRL R   &hm LALT S &hm LCMD T &kp G                &kp M         &hm RCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
- &kp LALT        &kp Z        &kp X   &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp LALT
-                                      &mo 2      &kp LCMD   &lt 4 ENTER          &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
+ &kp TAB    &kp Q        &kp W       &kp F	    &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp BACKSPACE
+ &lt 5 ESC  &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm RCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
+ &kp LALT   &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp LALT
+                                     &mo 2      &kp LCMD   &lt 4 ENTER          &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
             >;
         };
 
@@ -72,12 +72,21 @@
             >;
         };
 
-        layer_layer_navigation {
+        layer_navigation {
             bindings = <
  &trans  &trans  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans            &kp LEFT        &kp DOWN         &kp UP     &kp RIGHT   &trans        &trans
  &trans  &trans  &trans  &trans         &trans       &trans            &kp H           &kp J            &kp K      &kp L       &trans        &trans
  &trans  &trans  &trans  &trans         &trans       &trans            &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
                          &trans         &trans       &trans			   &trans          &trans           &trans
+            >;
+        };
+
+        layer_navigation_2 {
+            bindings = <
+ &trans  &trans  &trans  &trans &trans &trans        &trans   &trans   &trans &trans    &trans &trans
+ &trans  &trans  &trans  &trans &trans &trans        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+ &trans  &trans  &trans  &trans &trans &trans        &trans   &trans   &trans &trans    &trans &trans
+                         &trans &trans &trans			   &trans   &trans   &trans
             >;
         };
 
