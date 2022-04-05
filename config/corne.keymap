@@ -31,7 +31,7 @@
  &kp TAB    &kp Q        &kp W       &kp F	    &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp BACKSPACE
  &lt 5 ESC  &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
  &kp LALT   &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp LALT
-                                     &mo 2      &kp LCMD   &lt 4 ENTER          &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
+                                     &mo 2      &mo 4      &kp ENTER          &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
             >;
         };
 
