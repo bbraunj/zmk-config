@@ -38,7 +38,7 @@
 
         layer_raise {
             bindings = <
- &trans  &trans      &trans         &trans      &trans      &trans               &trans     &kp LBKT     &kp RBKT     &trans       &kp EQUAL      &trans
+ &trans  &trans      &trans         &trans      &trans      &trans               &trans     &kp LBKT     &kp RBKT     &trans       &kp EQUAL      &kp BLSH
  &trans  &hm LSHIFT N1 &hm LCTRL N2 &hm LALT N3 &hm LCMD N4 &kp N5               &kp N6     &hm LCMD N7  &hm RALT N8  &hm RCTRL N9 &hm RSHIFT N0  &kp APOS
  &trans  &trans      &trans         &trans      &trans      &trans               &trans     &trans       &trans       &trans       &trans         &trans
                                     &trans      &trans      &trans               &trans     &trans       &trans
