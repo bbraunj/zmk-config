@@ -27,25 +27,25 @@
         compatible = "zmk,keymap";
 
 
-        default_layer {
+        base {
             bindings = <
- &kp TAB    &kp Q        &kp W       &kp F	    &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &kp MINUS
- &kp ESC    &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
- &kp LALT   &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &kp GRAVE
-                                     &kp LSHIFT &mo 2      &kp ENTER            &kp BACKSPACE &lt 1 SPACE &mt RCMD TAB
+ &none &kp Q        &kp W       &kp F	   &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &none
+ &none &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
+ &none &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &none
+                                &lt 4 ESC  &lt 1 BSPC &lt 2 TAB            &lt 6 ENTER   &lt 5 SPACE &mt RCMD DEL
             >;
         };
 
-        layer_raise {
+        nav {
             bindings = <
- &trans  &trans      &trans         &trans      &trans      &trans               &trans     &kp LBKT     &kp RBKT     &trans       &kp EQUAL      &kp BLSH
- &trans  &hm LSHIFT N1 &hm LCTRL N2 &hm LALT N3 &hm LCMD N4 &kp N5               &kp N6     &hm LCMD N7  &hm RALT N8  &hm RCTRL N9 &hm RSHIFT N0  &kp APOS
- &trans  &trans      &trans         &trans      &trans      &trans               &trans     &trans       &trans       &trans       &trans         &trans
-                                    &trans      &trans      &trans               &trans     &trans       &trans
+ &trans  &trans      &trans    &trans   &trans   &trans               &trans     &kp LBKT     &kp RBKT     &trans       &kp EQUAL      &kp BLSH
+ &trans  &kp LSHIFT  &kp LCTRL &kp LALT &kp LCMD &trans               &kp N6     &hm LCMD N7  &hm RALT N8  &hm RCTRL N9 &hm RSHIFT N0  &kp APOS
+ &trans  &trans      &trans    &trans   &trans   &trans               &trans     &trans       &trans       &trans       &trans         &trans
+                               &trans   &trans   &trans               &trans     &trans       &trans
             >;
         };
 
-        layer_nav {
+        mouse {
             bindings = <
  &trans  &trans  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans            &kp C_MUTE      &kp C_VOL_DN     &kp C_VOL_UP  &trans    &trans &trans
  &trans  &trans  &trans  &trans         &trans       &trans            &kp H           &kp J            &kp K         &kp L     &trans &trans
@@ -54,7 +54,34 @@
             >;
         };
 
-        layer_nav_2 {
+        button {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+                         &trans  &trans &trans			      &trans   &trans   &trans
+            >;
+        };
+
+        media {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+                         &trans  &trans &trans			      &trans   &trans   &trans
+            >;
+        };
+
+        num {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+ &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
+                         &trans  &trans &trans			      &trans   &trans   &trans
+            >;
+        };
+
+        sym {
             bindings = <
  &trans  &trans  &trans  &trans  &trans &trans            &trans   &trans   &trans &trans    &trans &trans
  &trans  &trans  &trans  &trans  &trans &trans            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
