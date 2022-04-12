@@ -29,7 +29,7 @@
 
         base {
             bindings = <
- &none &kp Q        &kp W       &kp F	   &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &none
+ &none &kp Q        &kp W       &kp F	     &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &none
  &none &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
  &none &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &none
                                 &lt 4 ESC  &lt 1 BSPC &lt 2 TAB            &lt 6 ENTER   &lt 5 SPACE &mt RCMD DEL
@@ -75,7 +75,7 @@
         num {
             bindings = <
  &none  &kp LBKT      &kp N7  &kp N8  &kp N9 &kp RBKT          &trans &trans     &trans    &trans   &trans   &trans
- &none  &kp SEMICOLON &kp N4  &kp N3  &kp N6 &kp EQUAL         &trans &kp LSHIFT &kp LCTRL &kp LALT &kp LCMD &trans
+ &none  &kp SEMICOLON &kp N4  &kp N5  &kp N6 &kp EQUAL         &trans &kp LSHIFT &kp LCTRL &kp LALT &kp LCMD &trans
  &none  &kp GRAVE     &kp N1  &kp N2  &kp N3 &kp BSLH          &trans &trans     &trans    &trans   &trans   &trans
                               &kp DOT &kp N0 &kp MINUS         &trans &trans     &trans
             >;
