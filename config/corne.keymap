@@ -29,10 +29,10 @@
 
         base {
             bindings = <
- &none &kp Q        &kp W       &kp F	     &kp P      &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &none
- &none &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
- &none &kp Z        &kp X       &kp C      &kp D      &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &none
-                                &lt 4 ESC  &lt 1 BSPC &lt 2 TAB            &lt 6 ENTER   &lt 5 SPACE &mt RCMD DEL
+ &none &kp Q        &kp W       &kp F	     &kp P       &kp B                &kp J         &kp L       &kp U        &kp Y       &kp SEMICOLON &none
+ &none &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T  &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O  &kp APOS
+ &none &kp Z        &kp X       &kp C      &kp D       &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH      &none
+                                &lt 4 ESC  &lt 1 ENTER &lt 2 TAB            &lt 6 BSPC    &lt 5 SPACE &mt RCMD DEL
             >;
         };
 
@@ -41,7 +41,7 @@
  &trans  &trans      &trans    &trans   &trans   &trans               &kp LG(LS(Z)) &kp LG(V)    &kp LG(C)     &kp LG(X)     &kp LG(Z)      &none
  &trans  &kp LSHIFT  &kp LCTRL &kp LALT &kp LCMD &trans               &kp LEFT      &kp DOWN     &kp UP        &kp RIGHT     &kp CAPS       &none
  &trans  &trans      &trans    &trans   &trans   &trans               &kp INSERT    &kp HOME     &kp PAGE_DOWN &kp PAGE_UP   &kp END        &none
-                               &none    &trans   &none                &kp ENTER     &kp SPACE    &kp DEL
+                               &none    &trans   &none                &kp BSPC      &kp SPACE    &kp DEL
             >;
         };
 
