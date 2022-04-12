@@ -38,10 +38,10 @@
 
         nav {
             bindings = <
- &trans  &trans      &trans    &trans   &trans   &trans               &trans     &kp LBKT     &kp RBKT     &trans       &kp EQUAL      &kp BLSH
- &trans  &kp LSHIFT  &kp LCTRL &kp LALT &kp LCMD &trans               &kp N6     &hm LCMD N7  &hm RALT N8  &hm RCTRL N9 &hm RSHIFT N0  &kp APOS
- &trans  &trans      &trans    &trans   &trans   &trans               &trans     &trans       &trans       &trans       &trans         &trans
-                               &trans   &trans   &trans               &trans     &trans       &trans
+ &trans  &trans      &trans    &trans   &trans   &trans               &kp K_REDO    &kp K_PASTE  &kp K_COPY    &kp K_CUT     &kp K_UNDO     &none
+ &trans  &kp LSHIFT  &kp LCTRL &kp LALT &kp LCMD &trans               &kp CAPS      &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT      &none
+ &trans  &trans      &trans    &trans   &trans   &trans               &kp INSERT    &kp HOME     &kp PAGE_DOWN &kp PAGE_UP   &kp END        &none
+                               &none    &trans   &none                &kp ENTER     &kp SPACE    &kp DEL
             >;
         };
 
