@@ -30,10 +30,10 @@
 
         base {
             bindings = <
- &none &kp Q        &kp W       &kp F	     &kp P       &kp B                &kp J         &kp L       &kp U        &kp Y       &kp APOS     &none
- &none &hm LSHIFT A &hm LCTRL R &hm LALT S &hm LCMD T  &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O &none
- &none &kp Z        &kp X       &kp C      &kp D       &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH     &none
-                                &lt 4 ESC  &lt 1 TAB   &mt LSHIFT ENTER     &lt 6 BSPC    &lt 5 SPACE &mt RCMD DEL
+ &none &kp Q        &kp W       &kp F	          &kp P       &kp B                &kp J         &kp L       &kp U        &kp Y       &kp APOS     &none
+ &none &hm LSHIFT A &hm LCTRL R &hm LALT S      &hm LCMD T  &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O &none
+ &none &kp Z        &kp X       &kp C           &kp D       &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH     &none
+                                &mt LSHIFT ESC  &lt 1 TAB   &lt 4 ENTER          &lt 6 BSPC    &lt 5 SPACE &mt RSHIFT DEL
             >;
         };
 
