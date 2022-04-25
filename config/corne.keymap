@@ -23,6 +23,19 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
       };
+      altbspc: alt_backspace {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ALT_BACKSPACE";
+        #binding-cells = <0>;
+        bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+      ltaltbspc: layer_tap_alt_backspace {
+        compatible = "zmk,behavior-layer-tap";
+        label = "LAYER_TAP_ALT_BACKSPACE";
+        #binding-cells = <1>;
+        bindings = <&mo>, <&altbspc>;
+      };
     };
 
     keymap {
@@ -34,7 +47,7 @@
  &none    &kp Q        &kp W       &kp F	         &kp P       &kp B                &kp J         &kp L       &kp U        &kp Y       &kp APOS     &none
  &kp RCMD &hm LSHIFT A &hm LCTRL R &hm LALT S      &hm LCMD T  &kp G                &kp M         &hm LCMD N  &hm RALT E   &hm RCTRL I &hm RSHIFT O &none
  &none    &kp Z        &kp X       &kp C           &kp D       &kp V                &kp K         &kp H       &kp COMMA    &kp DOT     &kp FSLH     &none
-                                   &mt LSHIFT ESC  &lt 1 TAB   &lt 4 ENTER          &lt 6 BSPC    &lt 5 SPACE &mt RSHIFT DEL
+                                   &mt LSHIFT ESC  &lt 1 TAB   &lt 4 ENTER          &ltaltbspc    &lt 5 SPACE &mt RSHIFT DEL
             >;
         };
 
@@ -43,7 +56,7 @@
  &trans  &trans      &trans    &trans   &trans   &trans               &kp LG(LS(Z)) &kp LG(V)     &kp LG(C)     &kp LG(X)     &kp LG(Z)      &none
  &trans  &kp LSHIFT  &kp LCTRL &kp LALT &kp LCMD &trans               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp CAPS       &none
  &trans  &trans      &trans    &trans   &trans   &trans               &kp INSERT    &kp HOME      &kp PAGE_UP   &kp PAGE_DOWN &kp END        &none
-                               &none    &trans   &none                &kp LA(BSPC)  &kp SPACE     &kp DEL
+                               &none    &trans   &none                &kp BSPC      &kp SPACE     &kp DEL
             >;
         };
 
