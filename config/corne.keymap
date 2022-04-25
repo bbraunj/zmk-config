@@ -31,7 +31,7 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
       };
       ltaltbspc: layer_tap_alt_backspace {
-        compatible = "zmk,behavior-layer-tap";
+        compatible = "zmk,behavior-hold-tap";
         label = "LAYER_TAP_ALT_BACKSPACE";
         #binding-cells = <1>;
         bindings = <&mo>, <&altbspc>;
