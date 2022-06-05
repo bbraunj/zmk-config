@@ -34,7 +34,7 @@
       /*   label = "LAYER_TAP_ALT_BACKSPACE"; */
       /*   #binding-cells = <1>; */
       /*   bindings = <&mo>, <&altbspc>; */
-      };
+      /* }; */
     };
 
     keymap {
